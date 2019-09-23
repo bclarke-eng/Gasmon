@@ -1,0 +1,246 @@
+DEBUG:botocore.hooks:Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+DEBUG:botocore.hooks:Changing event name from before-call.apigateway to before-call.api-gateway
+DEBUG:botocore.hooks:Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+DEBUG:botocore.hooks:Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+DEBUG:botocore.hooks:Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+DEBUG:botocore.hooks:Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+DEBUG:botocore.hooks:Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+DEBUG:botocore.hooks:Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+DEBUG:botocore.hooks:Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+DEBUG:botocore.hooks:Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+DEBUG:botocore.hooks:Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+DEBUG:botocore.loaders:Loading JSON file: C:\Users\bprobert\AppData\Local\Programs\Python\Python37-32\lib\site-packages\boto3\data\s3\2006-03-01\resources-1.json
+DEBUG:botocore.credentials:Looking for credentials via: env
+DEBUG:botocore.credentials:Looking for credentials via: assume-role
+DEBUG:botocore.credentials:Looking for credentials via: assume-role-with-web-identity
+DEBUG:botocore.credentials:Looking for credentials via: shared-credentials-file
+INFO:botocore.credentials:Found credentials in shared credentials file: ~/.aws/credentials
+DEBUG:botocore.loaders:Loading JSON file: C:\Users\bprobert\AppData\Local\Programs\Python\Python37-32\lib\site-packages\botocore\data\endpoints.json
+DEBUG:botocore.hooks:Event choose-service-name: calling handler <function handle_service_name_alias at 0x03770C48>
+DEBUG:botocore.loaders:Loading JSON file: C:\Users\bprobert\AppData\Local\Programs\Python\Python37-32\lib\site-packages\botocore\data\s3\2006-03-01\service-2.json
+DEBUG:botocore.hooks:Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x0375C9C0>
+DEBUG:botocore.hooks:Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x037CE3D8>
+DEBUG:botocore.hooks:Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x0375C8A0>
+DEBUG:botocore.args:The s3 config key is not a dictionary type, ignoring its value of: None
+DEBUG:botocore.endpoint:Setting s3 timeout as (60, 60)
+DEBUG:botocore.loaders:Loading JSON file: C:\Users\bprobert\AppData\Local\Programs\Python\Python37-32\lib\site-packages\botocore\data\_retry.json
+DEBUG:botocore.client:Registering retry handlers for service: s3
+DEBUG:botocore.client:Defaulting to S3 virtual host style addressing with path style addressing fallback.
+DEBUG:boto3.resources.factory:Loading s3:s3
+INFO:root:Collecting information for AWS configuration.
+INFO:root:Information collected.
+INFO:root:Downloading file.
+DEBUG:s3transfer.utils:Acquiring 0
+DEBUG:s3transfer.tasks:DownloadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x03B1D290>}) about to wait for the following futures []
+DEBUG:s3transfer.tasks:DownloadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x03B1D290>}) done waiting for dependent futures
+DEBUG:s3transfer.tasks:Executing task DownloadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x03B1D290>}) with kwargs {'client': <botocore.client.S3 object at 0x03A98070>, 'config': <boto3.s3.transfer.TransferConfig object at 0x03B14ED0>, 'osutil': <s3transfer.utils.OSUtils object at 0x03615210>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x03B14FF0>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x03B1D290>, 'io_executor': <s3transfer.futures.BoundedExecutor object at 0x03B1D130>}
+DEBUG:botocore.hooks:Event before-parameter-build.s3.HeadObject: calling handler <function sse_md5 at 0x0377EA50>
+DEBUG:botocore.hooks:Event before-parameter-build.s3.HeadObject: calling handler <function validate_bucket_name at 0x0377EA08>
+DEBUG:botocore.hooks:Event before-parameter-build.s3.HeadObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x03AE1A90>>
+DEBUG:botocore.hooks:Event before-parameter-build.s3.HeadObject: calling handler <function generate_idempotent_uuid at 0x0377E810>
+DEBUG:botocore.hooks:Event before-call.s3.HeadObject: calling handler <function add_expect_header at 0x0377EBB8>
+DEBUG:botocore.hooks:Event before-call.s3.HeadObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x03AE1A90>>
+DEBUG:botocore.hooks:Event before-call.s3.HeadObject: calling handler <function inject_api_version_header_if_needed at 0x03780588>
+DEBUG:botocore.endpoint:Making request for OperationModel(name=HeadObject) with params: {'url_path': '/eventprocessing-part1-locationss3bucket-ne8nmobj2sgs/locations.json', 'query_string': {}, 'method': 'HEAD', 'headers': {'User-Agent': 'Boto3/1.9.233 Python/3.7.2 Windows/10 Botocore/1.12.233 Resource'}, 'body': b'', 'url': 'https://s3.eu-west-1.amazonaws.com/eventprocessing-part1-locationss3bucket-ne8nmobj2sgs/locations.json', 'context': {'client_region': 'eu-west-1', 'client_config': <botocore.config.Config object at 0x02F16410>, 'has_streaming_input': False, 'auth_type': None, 'signing': {'bucket': 'eventprocessing-part1-locationss3bucket-ne8nmobj2sgs'}}}
+DEBUG:botocore.hooks:Event request-created.s3.HeadObject: calling handler <function signal_not_transferring at 0x03976B70>
+DEBUG:botocore.hooks:Event request-created.s3.HeadObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x03A98390>>
+DEBUG:botocore.hooks:Event choose-signer.s3.HeadObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x037D24D0>>
+DEBUG:botocore.hooks:Event choose-signer.s3.HeadObject: calling handler <function set_operation_specific_signer at 0x0377E780>
+DEBUG:botocore.hooks:Event before-sign.s3.HeadObject: calling handler <function fix_s3_host at 0x03677228>
+DEBUG:botocore.utils:Checking for DNS compatible bucket for: https://s3.eu-west-1.amazonaws.com/eventprocessing-part1-locationss3bucket-ne8nmobj2sgs/locations.json
+DEBUG:botocore.utils:URI updated to: https://eventprocessing-part1-locationss3bucket-ne8nmobj2sgs.s3.eu-west-1.amazonaws.com/locations.json
+DEBUG:botocore.auth:Calculating signature using v4 auth.
+DEBUG:botocore.auth:CanonicalRequest:
+HEAD
+/locations.json
+
+host:eventprocessing-part1-locationss3bucket-ne8nmobj2sgs.s3.eu-west-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20190923T155659Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+DEBUG:botocore.auth:StringToSign:
+AWS4-HMAC-SHA256
+20190923T155659Z
+20190923/eu-west-1/s3/aws4_request
+042d369ad23c4eda428ef6920353d8c952d30cc8a0c3d4813e5c00771d617625
+DEBUG:botocore.auth:Signature:
+4458b55e0b2e23669d73ceb5bbaf23d861d2cde9fc14a6eb7f12d4b186e1dd1a
+DEBUG:botocore.hooks:Event request-created.s3.HeadObject: calling handler <function signal_transferring at 0x03976BB8>
+DEBUG:botocore.endpoint:Sending http request: <AWSPreparedRequest stream_output=False, method=HEAD, url=https://eventprocessing-part1-locationss3bucket-ne8nmobj2sgs.s3.eu-west-1.amazonaws.com/locations.json, headers={'User-Agent': b'Boto3/1.9.233 Python/3.7.2 Windows/10 Botocore/1.12.233 Resource', 'X-Amz-Date': b'20190923T155659Z', 'X-Amz-Content-SHA256': b'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAYBO7DFJCED3DOVGM/20190923/eu-west-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=4458b55e0b2e23669d73ceb5bbaf23d861d2cde9fc14a6eb7f12d4b186e1dd1a'}>
+DEBUG:urllib3.util.retry:Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): eventprocessing-part1-locationss3bucket-ne8nmobj2sgs.s3.eu-west-1.amazonaws.com:443
+DEBUG:urllib3.connectionpool:https://eventprocessing-part1-locationss3bucket-ne8nmobj2sgs.s3.eu-west-1.amazonaws.com:443 "HEAD /locations.json HTTP/1.1" 200 0
+DEBUG:botocore.parsers:Response headers: {'x-amz-id-2': 'iU4VytjrogJd9bYpCjN0rlf43ffCHus+GsCjTT2YGUmm9XkqGv87Wwtli7IE2WIq7i3Vie0Fsjs=', 'x-amz-request-id': 'F2784013EBB307EA', 'Date': 'Mon, 23 Sep 2019 15:57:00 GMT', 'Last-Modified': 'Mon, 23 Sep 2019 10:58:39 GMT', 'ETag': '"0e0b7a864f6bd59e213f8e7c6de5b765"', 'Content-Encoding': 'UTF-8', 'Accept-Ranges': 'bytes', 'Content-Type': 'application/json', 'Content-Length': '904', 'Server': 'AmazonS3'}
+DEBUG:botocore.parsers:Response body:
+b''
+DEBUG:botocore.hooks:Event needs-retry.s3.HeadObject: calling handler <botocore.retryhandler.RetryHandler object at 0x03AE1A70>
+DEBUG:botocore.retryhandler:No retry needed.
+DEBUG:botocore.hooks:Event needs-retry.s3.HeadObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x03AE1A90>>
+DEBUG:s3transfer.futures:Submitting task ImmediatelyWriteIOGetObjectTask(transfer_id=0, {'bucket': 'eventprocessing-part1-locationss3bucket-ne8nmobj2sgs', 'key': 'locations.json', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x03B14FF0> for transfer request: 0.
+DEBUG:s3transfer.utils:Acquiring 0
+DEBUG:s3transfer.tasks:ImmediatelyWriteIOGetObjectTask(transfer_id=0, {'bucket': 'eventprocessing-part1-locationss3bucket-ne8nmobj2sgs', 'key': 'locations.json', 'extra_args': {}}) about to wait for the following futures []
+DEBUG:s3transfer.tasks:ImmediatelyWriteIOGetObjectTask(transfer_id=0, {'bucket': 'eventprocessing-part1-locationss3bucket-ne8nmobj2sgs', 'key': 'locations.json', 'extra_args': {}}) done waiting for dependent futures
+DEBUG:s3transfer.tasks:Executing task ImmediatelyWriteIOGetObjectTask(transfer_id=0, {'bucket': 'eventprocessing-part1-locationss3bucket-ne8nmobj2sgs', 'key': 'locations.json', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x03A98070>, 'bucket': 'eventprocessing-part1-locationss3bucket-ne8nmobj2sgs', 'key': 'locations.json', 'fileobj': <s3transfer.utils.DeferredOpenFile object at 0x03D77170>, 'extra_args': {}, 'callbacks': [], 'max_attempts': 5, 'download_output_manager': <s3transfer.download.DownloadFilenameOutputManager object at 0x02F2BDD0>, 'io_chunksize': 262144, 'bandwidth_limiter': None}
+DEBUG:botocore.hooks:Event before-parameter-build.s3.GetObject: calling handler <function sse_md5 at 0x0377EA50>
+DEBUG:botocore.hooks:Event before-parameter-build.s3.GetObject: calling handler <function validate_bucket_name at 0x0377EA08>
+DEBUG:s3transfer.utils:Releasing acquire 0/None
+DEBUG:botocore.hooks:Event before-parameter-build.s3.GetObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x03AE1A90>>
+DEBUG:botocore.hooks:Event before-parameter-build.s3.GetObject: calling handler <function generate_idempotent_uuid at 0x0377E810>
+DEBUG:botocore.hooks:Event before-call.s3.GetObject: calling handler <function add_expect_header at 0x0377EBB8>
+DEBUG:botocore.hooks:Event before-call.s3.GetObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x03AE1A90>>
+DEBUG:botocore.hooks:Event before-call.s3.GetObject: calling handler <function inject_api_version_header_if_needed at 0x03780588>
+DEBUG:botocore.endpoint:Making request for OperationModel(name=GetObject) with params: {'url_path': '/eventprocessing-part1-locationss3bucket-ne8nmobj2sgs/locations.json', 'query_string': {}, 'method': 'GET', 'headers': {'User-Agent': 'Boto3/1.9.233 Python/3.7.2 Windows/10 Botocore/1.12.233 Resource'}, 'body': b'', 'url': 'https://s3.eu-west-1.amazonaws.com/eventprocessing-part1-locationss3bucket-ne8nmobj2sgs/locations.json', 'context': {'client_region': 'eu-west-1', 'client_config': <botocore.config.Config object at 0x02F16410>, 'has_streaming_input': False, 'auth_type': None, 'signing': {'bucket': 'eventprocessing-part1-locationss3bucket-ne8nmobj2sgs'}}}
+DEBUG:botocore.hooks:Event request-created.s3.GetObject: calling handler <function signal_not_transferring at 0x03976B70>
+DEBUG:botocore.hooks:Event request-created.s3.GetObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x03A98390>>
+DEBUG:botocore.hooks:Event choose-signer.s3.GetObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x037D24D0>>
+DEBUG:botocore.hooks:Event choose-signer.s3.GetObject: calling handler <function set_operation_specific_signer at 0x0377E780>
+DEBUG:botocore.hooks:Event before-sign.s3.GetObject: calling handler <function fix_s3_host at 0x03677228>
+DEBUG:botocore.utils:Checking for DNS compatible bucket for: https://s3.eu-west-1.amazonaws.com/eventprocessing-part1-locationss3bucket-ne8nmobj2sgs/locations.json
+DEBUG:botocore.utils:URI updated to: https://eventprocessing-part1-locationss3bucket-ne8nmobj2sgs.s3.eu-west-1.amazonaws.com/locations.json
+DEBUG:botocore.auth:Calculating signature using v4 auth.
+DEBUG:botocore.auth:CanonicalRequest:
+GET
+/locations.json
+
+host:eventprocessing-part1-locationss3bucket-ne8nmobj2sgs.s3.eu-west-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20190923T155659Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+DEBUG:botocore.auth:StringToSign:
+AWS4-HMAC-SHA256
+20190923T155659Z
+20190923/eu-west-1/s3/aws4_request
+cb742bbf8d98a9cbf7f323ce2999beedc63f6881f3e190352f7d277e2f953732
+DEBUG:botocore.auth:Signature:
+81d6e81065e8b13c06e54c4cd16299b4706791086abcffa38d03de2d55afd15d
+DEBUG:botocore.hooks:Event request-created.s3.GetObject: calling handler <function signal_transferring at 0x03976BB8>
+DEBUG:botocore.endpoint:Sending http request: <AWSPreparedRequest stream_output=True, method=GET, url=https://eventprocessing-part1-locationss3bucket-ne8nmobj2sgs.s3.eu-west-1.amazonaws.com/locations.json, headers={'User-Agent': b'Boto3/1.9.233 Python/3.7.2 Windows/10 Botocore/1.12.233 Resource', 'X-Amz-Date': b'20190923T155659Z', 'X-Amz-Content-SHA256': b'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAYBO7DFJCED3DOVGM/20190923/eu-west-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=81d6e81065e8b13c06e54c4cd16299b4706791086abcffa38d03de2d55afd15d'}>
+DEBUG:urllib3.util.retry:Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+DEBUG:urllib3.connectionpool:https://eventprocessing-part1-locationss3bucket-ne8nmobj2sgs.s3.eu-west-1.amazonaws.com:443 "GET /locations.json HTTP/1.1" 200 904
+DEBUG:botocore.parsers:Response headers: {'x-amz-id-2': 'c2JeVd2ZVF/yMuEYh3MxPZ8esvlU1d2ctQsDtkRjUFDktMCM0oqQBxVVl69nfYLG57NuWAnoAW8=', 'x-amz-request-id': 'ECD6C0D956391FA5', 'Date': 'Mon, 23 Sep 2019 15:57:00 GMT', 'Last-Modified': 'Mon, 23 Sep 2019 10:58:39 GMT', 'ETag': '"0e0b7a864f6bd59e213f8e7c6de5b765"', 'Content-Encoding': 'UTF-8', 'Accept-Ranges': 'bytes', 'Content-Type': 'application/json', 'Content-Length': '904', 'Server': 'AmazonS3'}
+DEBUG:botocore.parsers:Response body:
+<botocore.response.StreamingBody object at 0x03D94F30>
+DEBUG:botocore.hooks:Event needs-retry.s3.GetObject: calling handler <botocore.retryhandler.RetryHandler object at 0x03AE1A70>
+DEBUG:botocore.retryhandler:No retry needed.
+DEBUG:botocore.hooks:Event needs-retry.s3.GetObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x03AE1A90>>
+DEBUG:s3transfer.tasks:IOWriteTask(transfer_id=0, {'offset': 0}) about to wait for the following futures []
+DEBUG:s3transfer.tasks:IOWriteTask(transfer_id=0, {'offset': 0}) done waiting for dependent futures
+DEBUG:s3transfer.tasks:Executing task IOWriteTask(transfer_id=0, {'offset': 0}) with kwargs {'fileobj': <s3transfer.utils.DeferredOpenFile object at 0x03D77170>, 'offset': 0}
+DEBUG:s3transfer.tasks:IORenameFileTask(transfer_id=0, {'final_filename': 'locations.json'}) about to wait for the following futures []
+DEBUG:s3transfer.tasks:IORenameFileTask(transfer_id=0, {'final_filename': 'locations.json'}) done waiting for dependent futures
+DEBUG:s3transfer.tasks:Executing task IORenameFileTask(transfer_id=0, {'final_filename': 'locations.json'}) with kwargs {'fileobj': <s3transfer.utils.DeferredOpenFile object at 0x03D77170>, 'final_filename': 'locations.json', 'osutil': <s3transfer.utils.OSUtils object at 0x03615210>}
+DEBUG:s3transfer.utils:Releasing acquire 0/None
+INFO:root:File successfully downloaded. Saved as: locations.json
+INFO:root:Collecting information for AWS configuration.
+INFO:root:Information collected.
+INFO:root:Downloading file.
+DEBUG:s3transfer.utils:Acquiring 0
+DEBUG:s3transfer.tasks:DownloadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x03D94F90>}) about to wait for the following futures []
+DEBUG:s3transfer.tasks:DownloadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x03D94F90>}) done waiting for dependent futures
+DEBUG:s3transfer.tasks:Executing task DownloadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x03D94F90>}) with kwargs {'client': <botocore.client.S3 object at 0x03A98070>, 'config': <boto3.s3.transfer.TransferConfig object at 0x03B14EB0>, 'osutil': <s3transfer.utils.OSUtils object at 0x03B14E70>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x03B14EF0>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x03D94F90>, 'io_executor': <s3transfer.futures.BoundedExecutor object at 0x03D773B0>}
+DEBUG:botocore.hooks:Event before-parameter-build.s3.HeadObject: calling handler <function sse_md5 at 0x0377EA50>
+DEBUG:botocore.hooks:Event before-parameter-build.s3.HeadObject: calling handler <function validate_bucket_name at 0x0377EA08>
+DEBUG:botocore.hooks:Event before-parameter-build.s3.HeadObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x03AE1A90>>
+DEBUG:botocore.hooks:Event before-parameter-build.s3.HeadObject: calling handler <function generate_idempotent_uuid at 0x0377E810>
+DEBUG:botocore.hooks:Event before-call.s3.HeadObject: calling handler <function add_expect_header at 0x0377EBB8>
+DEBUG:botocore.hooks:Event before-call.s3.HeadObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x03AE1A90>>
+DEBUG:botocore.hooks:Event before-call.s3.HeadObject: calling handler <function inject_api_version_header_if_needed at 0x03780588>
+DEBUG:botocore.endpoint:Making request for OperationModel(name=HeadObject) with params: {'url_path': '/eventprocessing-part1-locationss3bucket-ne8nmobj2sgs/locations.json', 'query_string': {}, 'method': 'HEAD', 'headers': {'User-Agent': 'Boto3/1.9.233 Python/3.7.2 Windows/10 Botocore/1.12.233 Resource'}, 'body': b'', 'url': 'https://s3.eu-west-1.amazonaws.com/eventprocessing-part1-locationss3bucket-ne8nmobj2sgs/locations.json', 'context': {'client_region': 'eu-west-1', 'client_config': <botocore.config.Config object at 0x02F16410>, 'has_streaming_input': False, 'auth_type': None, 'signing': {'bucket': 'eventprocessing-part1-locationss3bucket-ne8nmobj2sgs'}}}
+DEBUG:botocore.hooks:Event request-created.s3.HeadObject: calling handler <function signal_not_transferring at 0x03976B70>
+DEBUG:botocore.hooks:Event request-created.s3.HeadObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x03A98390>>
+DEBUG:botocore.hooks:Event choose-signer.s3.HeadObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x037D24D0>>
+DEBUG:botocore.hooks:Event choose-signer.s3.HeadObject: calling handler <function set_operation_specific_signer at 0x0377E780>
+DEBUG:botocore.hooks:Event before-sign.s3.HeadObject: calling handler <function fix_s3_host at 0x03677228>
+DEBUG:botocore.utils:Checking for DNS compatible bucket for: https://s3.eu-west-1.amazonaws.com/eventprocessing-part1-locationss3bucket-ne8nmobj2sgs/locations.json
+DEBUG:botocore.utils:URI updated to: https://eventprocessing-part1-locationss3bucket-ne8nmobj2sgs.s3.eu-west-1.amazonaws.com/locations.json
+DEBUG:botocore.auth:Calculating signature using v4 auth.
+DEBUG:botocore.auth:CanonicalRequest:
+HEAD
+/locations.json
+
+host:eventprocessing-part1-locationss3bucket-ne8nmobj2sgs.s3.eu-west-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20190923T155659Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+DEBUG:botocore.auth:StringToSign:
+AWS4-HMAC-SHA256
+20190923T155659Z
+20190923/eu-west-1/s3/aws4_request
+042d369ad23c4eda428ef6920353d8c952d30cc8a0c3d4813e5c00771d617625
+DEBUG:botocore.auth:Signature:
+4458b55e0b2e23669d73ceb5bbaf23d861d2cde9fc14a6eb7f12d4b186e1dd1a
+DEBUG:botocore.hooks:Event request-created.s3.HeadObject: calling handler <function signal_transferring at 0x03976BB8>
+DEBUG:botocore.endpoint:Sending http request: <AWSPreparedRequest stream_output=False, method=HEAD, url=https://eventprocessing-part1-locationss3bucket-ne8nmobj2sgs.s3.eu-west-1.amazonaws.com/locations.json, headers={'User-Agent': b'Boto3/1.9.233 Python/3.7.2 Windows/10 Botocore/1.12.233 Resource', 'X-Amz-Date': b'20190923T155659Z', 'X-Amz-Content-SHA256': b'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAYBO7DFJCED3DOVGM/20190923/eu-west-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=4458b55e0b2e23669d73ceb5bbaf23d861d2cde9fc14a6eb7f12d4b186e1dd1a'}>
+DEBUG:urllib3.util.retry:Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+DEBUG:urllib3.connectionpool:https://eventprocessing-part1-locationss3bucket-ne8nmobj2sgs.s3.eu-west-1.amazonaws.com:443 "HEAD /locations.json HTTP/1.1" 200 0
+DEBUG:botocore.parsers:Response headers: {'x-amz-id-2': 'lVhREMLpJ1wWtfQpG3GJwQ9bCyf4wxLRqjuwO5gv5dA3HHzWUQ9O6qKcE1lU2E+c1etsUcUGRwI=', 'x-amz-request-id': '7A1A9747CDC9EFD0', 'Date': 'Mon, 23 Sep 2019 15:57:00 GMT', 'Last-Modified': 'Mon, 23 Sep 2019 10:58:39 GMT', 'ETag': '"0e0b7a864f6bd59e213f8e7c6de5b765"', 'Content-Encoding': 'UTF-8', 'Accept-Ranges': 'bytes', 'Content-Type': 'application/json', 'Content-Length': '904', 'Server': 'AmazonS3'}
+DEBUG:botocore.parsers:Response body:
+b''
+DEBUG:botocore.hooks:Event needs-retry.s3.HeadObject: calling handler <botocore.retryhandler.RetryHandler object at 0x03AE1A70>
+DEBUG:botocore.retryhandler:No retry needed.
+DEBUG:botocore.hooks:Event needs-retry.s3.HeadObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x03AE1A90>>
+DEBUG:s3transfer.futures:Submitting task ImmediatelyWriteIOGetObjectTask(transfer_id=0, {'bucket': 'eventprocessing-part1-locationss3bucket-ne8nmobj2sgs', 'key': 'locations.json', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x03B14EF0> for transfer request: 0.
+DEBUG:s3transfer.utils:Acquiring 0
+DEBUG:s3transfer.tasks:ImmediatelyWriteIOGetObjectTask(transfer_id=0, {'bucket': 'eventprocessing-part1-locationss3bucket-ne8nmobj2sgs', 'key': 'locations.json', 'extra_args': {}}) about to wait for the following futures []
+DEBUG:s3transfer.tasks:ImmediatelyWriteIOGetObjectTask(transfer_id=0, {'bucket': 'eventprocessing-part1-locationss3bucket-ne8nmobj2sgs', 'key': 'locations.json', 'extra_args': {}}) done waiting for dependent futures
+DEBUG:s3transfer.tasks:Executing task ImmediatelyWriteIOGetObjectTask(transfer_id=0, {'bucket': 'eventprocessing-part1-locationss3bucket-ne8nmobj2sgs', 'key': 'locations.json', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x03A98070>, 'bucket': 'eventprocessing-part1-locationss3bucket-ne8nmobj2sgs', 'key': 'locations.json', 'fileobj': <s3transfer.utils.DeferredOpenFile object at 0x03B1D790>, 'extra_args': {}, 'callbacks': [], 'max_attempts': 5, 'download_output_manager': <s3transfer.download.DownloadFilenameOutputManager object at 0x03B1DF10>, 'io_chunksize': 262144, 'bandwidth_limiter': None}
+DEBUG:botocore.hooks:Event before-parameter-build.s3.GetObject: calling handler <function sse_md5 at 0x0377EA50>
+DEBUG:botocore.hooks:Event before-parameter-build.s3.GetObject: calling handler <function validate_bucket_name at 0x0377EA08>
+DEBUG:botocore.hooks:Event before-parameter-build.s3.GetObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x03AE1A90>>
+DEBUG:botocore.hooks:Event before-parameter-build.s3.GetObject: calling handler <function generate_idempotent_uuid at 0x0377E810>
+DEBUG:s3transfer.utils:Releasing acquire 0/None
+DEBUG:botocore.hooks:Event before-call.s3.GetObject: calling handler <function add_expect_header at 0x0377EBB8>
+DEBUG:botocore.hooks:Event before-call.s3.GetObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x03AE1A90>>
+DEBUG:botocore.hooks:Event before-call.s3.GetObject: calling handler <function inject_api_version_header_if_needed at 0x03780588>
+DEBUG:botocore.endpoint:Making request for OperationModel(name=GetObject) with params: {'url_path': '/eventprocessing-part1-locationss3bucket-ne8nmobj2sgs/locations.json', 'query_string': {}, 'method': 'GET', 'headers': {'User-Agent': 'Boto3/1.9.233 Python/3.7.2 Windows/10 Botocore/1.12.233 Resource'}, 'body': b'', 'url': 'https://s3.eu-west-1.amazonaws.com/eventprocessing-part1-locationss3bucket-ne8nmobj2sgs/locations.json', 'context': {'client_region': 'eu-west-1', 'client_config': <botocore.config.Config object at 0x02F16410>, 'has_streaming_input': False, 'auth_type': None, 'signing': {'bucket': 'eventprocessing-part1-locationss3bucket-ne8nmobj2sgs'}}}
+DEBUG:botocore.hooks:Event request-created.s3.GetObject: calling handler <function signal_not_transferring at 0x03976B70>
+DEBUG:botocore.hooks:Event request-created.s3.GetObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x03A98390>>
+DEBUG:botocore.hooks:Event choose-signer.s3.GetObject: calling handler <bound method ClientCreator._default_s3_presign_to_sigv2 of <botocore.client.ClientCreator object at 0x037D24D0>>
+DEBUG:botocore.hooks:Event choose-signer.s3.GetObject: calling handler <function set_operation_specific_signer at 0x0377E780>
+DEBUG:botocore.hooks:Event before-sign.s3.GetObject: calling handler <function fix_s3_host at 0x03677228>
+DEBUG:botocore.utils:Checking for DNS compatible bucket for: https://s3.eu-west-1.amazonaws.com/eventprocessing-part1-locationss3bucket-ne8nmobj2sgs/locations.json
+DEBUG:botocore.utils:URI updated to: https://eventprocessing-part1-locationss3bucket-ne8nmobj2sgs.s3.eu-west-1.amazonaws.com/locations.json
+DEBUG:botocore.auth:Calculating signature using v4 auth.
+DEBUG:botocore.auth:CanonicalRequest:
+GET
+/locations.json
+
+host:eventprocessing-part1-locationss3bucket-ne8nmobj2sgs.s3.eu-west-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20190923T155659Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+DEBUG:botocore.auth:StringToSign:
+AWS4-HMAC-SHA256
+20190923T155659Z
+20190923/eu-west-1/s3/aws4_request
+cb742bbf8d98a9cbf7f323ce2999beedc63f6881f3e190352f7d277e2f953732
+DEBUG:botocore.auth:Signature:
+81d6e81065e8b13c06e54c4cd16299b4706791086abcffa38d03de2d55afd15d
+DEBUG:botocore.hooks:Event request-created.s3.GetObject: calling handler <function signal_transferring at 0x03976BB8>
+DEBUG:botocore.endpoint:Sending http request: <AWSPreparedRequest stream_output=True, method=GET, url=https://eventprocessing-part1-locationss3bucket-ne8nmobj2sgs.s3.eu-west-1.amazonaws.com/locations.json, headers={'User-Agent': b'Boto3/1.9.233 Python/3.7.2 Windows/10 Botocore/1.12.233 Resource', 'X-Amz-Date': b'20190923T155659Z', 'X-Amz-Content-SHA256': b'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAYBO7DFJCED3DOVGM/20190923/eu-west-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=81d6e81065e8b13c06e54c4cd16299b4706791086abcffa38d03de2d55afd15d'}>
+DEBUG:urllib3.util.retry:Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+DEBUG:urllib3.connectionpool:https://eventprocessing-part1-locationss3bucket-ne8nmobj2sgs.s3.eu-west-1.amazonaws.com:443 "GET /locations.json HTTP/1.1" 200 904
+DEBUG:botocore.parsers:Response headers: {'x-amz-id-2': '/PRa9lICA8RvDHLmVI9bac3oQueYMUDGidl39eTlEqHBUXhcQ2CLyf3F3FH2NGxEsvUNi/6upQU=', 'x-amz-request-id': '36563419D498780E', 'Date': 'Mon, 23 Sep 2019 15:57:00 GMT', 'Last-Modified': 'Mon, 23 Sep 2019 10:58:39 GMT', 'ETag': '"0e0b7a864f6bd59e213f8e7c6de5b765"', 'Content-Encoding': 'UTF-8', 'Accept-Ranges': 'bytes', 'Content-Type': 'application/json', 'Content-Length': '904', 'Server': 'AmazonS3'}
+DEBUG:botocore.parsers:Response body:
+<botocore.response.StreamingBody object at 0x0421B1F0>
+DEBUG:botocore.hooks:Event needs-retry.s3.GetObject: calling handler <botocore.retryhandler.RetryHandler object at 0x03AE1A70>
+DEBUG:botocore.retryhandler:No retry needed.
+DEBUG:botocore.hooks:Event needs-retry.s3.GetObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x03AE1A90>>
+DEBUG:s3transfer.tasks:IOWriteTask(transfer_id=0, {'offset': 0}) about to wait for the following futures []
+DEBUG:s3transfer.tasks:IOWriteTask(transfer_id=0, {'offset': 0}) done waiting for dependent futures
+DEBUG:s3transfer.tasks:Executing task IOWriteTask(transfer_id=0, {'offset': 0}) with kwargs {'fileobj': <s3transfer.utils.DeferredOpenFile object at 0x03B1D790>, 'offset': 0}
+DEBUG:s3transfer.tasks:IORenameFileTask(transfer_id=0, {'final_filename': 'locations.json'}) about to wait for the following futures []
+DEBUG:s3transfer.tasks:IORenameFileTask(transfer_id=0, {'final_filename': 'locations.json'}) done waiting for dependent futures
+DEBUG:s3transfer.tasks:Executing task IORenameFileTask(transfer_id=0, {'final_filename': 'locations.json'}) with kwargs {'fileobj': <s3transfer.utils.DeferredOpenFile object at 0x03B1D790>, 'final_filename': 'locations.json', 'osutil': <s3transfer.utils.OSUtils object at 0x03B14E70>}
+DEBUG:s3transfer.utils:Releasing acquire 0/None
+INFO:root:File successfully downloaded. Saved as: locations.json
+INFO:root:locations.json opened in read mode.
+INFO:root:File read. x and y coordinates and id's obtained.

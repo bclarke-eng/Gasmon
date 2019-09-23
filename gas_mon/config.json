@@ -1,0 +1,7 @@
+{
+  "ARN" : "arn:aws:sns:eu-west-1:552908040772:EventProcessing-Part1-snsTopicSensorDataPart1-1001WZ2UL827H",
+  "Bucket" : "eventprocessing-part1-locationss3bucket-ne8nmobj2sgs",
+  "Key" : "locations.json",
+  "Filename": "locations.json"
+}
+
